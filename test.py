@@ -1,7 +1,3 @@
-def update_local_configs(processed_arns, main_config_path, queue_config_path, queue_mapping_path):
-print(f"\nProcessing Queue configuration: '{queue_config_path}' using mapping '{queue_mapping_path}'")
-# Load the queue mapping from the hoo-quue_mapping file
-    queue_mapping = {}
     try:
         with open(queue_mapping_path, 'r') as file:
             queue_mapping = yaml.safe_load(file)
